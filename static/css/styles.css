@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.message {
+    margin-bottom: 5px;
+}
+
+.user-message {
+    text-align: right;
+    color: blue;
+}
+
+.assistant-message {
+    text-align: left;
+    color: green;
+}
+
+.code-block {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+}
+
+.copy-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    background-color: #0056b3;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.input-box textarea {
+    flex-grow: 1;
+    resize: none;
+    font-size: 16px; /* 调大文字大小 */
+    padding: 10px; /* 增加内边距 */
+}
+
+.button {
+    margin-left: 10px;
+    padding: 10px 20px; /* 增加内边距 */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px; /* 添加圆角 */
+    cursor: pointer;
+    font-size: 16px; /* 调大文字大小 */
+}
+
+.button:hover {
+    background-color: #0056b3; /* 悬停效果 */
+}
