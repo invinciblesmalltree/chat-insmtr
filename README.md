@@ -10,6 +10,7 @@ cd chat-insmtr
 docker build -t chat-insmtr .
 docker run -id --name chat-insmtr \
        -e AZURE_OPENAI_KEY=你的API密钥 \
+       -e AZURE_OPENAI_API_VERSION=你希望使用的API版本 \
        -e AZURE_OPENAI_ENDPOINT=https://你的资源名称.openai.azure.com/ \
        -p 8181:5000 chat-insmtr
 ```
