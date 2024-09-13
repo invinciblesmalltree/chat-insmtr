@@ -37,7 +37,7 @@ def chat():
     user_sessions[user_id].append({"role": "user", "content": user_message})
 
     response = client.chat.completions.create(
-        model="chat-insmtr",
+        model=os.getenv("AZURE_OPENAI_API_MODEL"),
         messages=user_sessions[user_id]
     )
 
